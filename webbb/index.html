@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brandify - We Build Brands</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Brandify</div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="toggle-theme" id="themeToggle">🌙</div>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content container">
+      <h1>We Build Brands That Speak</h1>
+      <p>High-performance websites & stunning brand identities tailored to make a lasting impression.</p>
+      <button onclick="scrollToSection('services')">Our Services</button>
+    </div>
+  </section>
+
+  <section id="services" class="cards-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Web Design</h3>
+          <p>Modern, mobile-first UI/UX tailored to your brand.</p>
+        </div>
+        <div class="card">
+          <h3>Brand Strategy</h3>
+          <p>Establish a powerful and consistent brand identity.</p>
+        </div>
+        <div class="card">
+          <h3>Digital Marketing</h3>
+          <p>Grow with SEO, social media, and online ads.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial active">"Amazing service and design sense!" – Aditi Sharma</div>
+        <div class="testimonial">"They completely transformed our online presence." – Rohan Verma</div>
+        <div class="testimonial">"Professional, timely, and creative." – Simran Kaur</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>We are a team of passionate creatives and developers who specialize in crafting digital experiences that elevate your brand. With over 5+ years of experience, we bring design and technology together to tell your story.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="formMessage"></p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Brandify. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="24"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" width="24"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="LinkedIn" width="24"></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTopBtn" title="Back to top">⬆</button>
+</body>
+</html>
